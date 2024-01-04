@@ -17,6 +17,14 @@ body {
   font-family: "Orelega One", serif;
 }
 
+.asterisk{
+    color: #FD0100;
+}
+
+.input-box{
+    background-color: #BFC0C0;
+}
+
 h1,
 h2,
 h3,
