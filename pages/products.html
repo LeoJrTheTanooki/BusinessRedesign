@@ -17,7 +17,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../styles/style.css" />
-    <!-- <style>
+    <style>
       .container,
       .container-fluid {
         border: solid red;
@@ -25,28 +25,66 @@
       .row {
         border: solid blue;
       }
-      .col,
-      .col-1
-        .col-2
-        .col-3
-        .col-4
-        .col-5
-        .col-6
-        .col-7
-        .col-8
-        .col-9
-        .col-10
-        .col-11
-        .col-12 {
+      .col-1,
+      .col-2,
+      .col-3,
+      .col-4,
+      .col-5,
+      .col-6,
+      .col-7,
+      .col-8,
+      .col-9,
+      .col-10,
+      .col-11,
+      .col-12,
+      .col-sm-1,
+      .col-sm-2,
+      .col-sm-3,
+      .col-sm-4,
+      .col-sm-5,
+      .col-sm-6,
+      .col-sm-7,
+      .col-sm-8,
+      .col-sm-9,
+      .col-sm-10,
+      .col-sm-11,
+      .col-sm-12,
+      .col-md-1,
+      .col-md-2,
+      .col-md-3,
+      .col-md-4,
+      .col-md-5,
+      .col-md-6,
+      .col-md-7,
+      .col-md-8,
+      .col-md-9,
+      .col-md-10,
+      .col-md-11,
+      .col-md-12,
+      .col-lg-1,
+      .col-lg-2,
+      .col-lg-3,
+      .col-lg-4,
+      .col-lg-5,
+      .col-lg-6,
+      .col-lg-7,
+      .col-lg-8,
+      .col-lg-9,
+      .col-lg-10,
+      .col-lg-11,
+      .col-lg-12,
+      .col {
         border: solid yellow;
       }
-    </style> -->
+    </style>
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg " style="background-color: #E9E9E980;">
+  <body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg" style="background-color: #e9e9e980">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"
-          ><img src="../assets/alpha_snip-removebg-preview 1.png" alt="alpha enterprise logo"
+          ><img
+            src="../assets/alpha_snip-removebg-preview 1.png"
+            alt="alpha enterprise logo"
         /></a>
         <button
           class="navbar-toggler"
@@ -62,7 +100,9 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../index.html">home</a>
+              <a class="nav-link" aria-current="page" href="../index.html"
+                >home</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../pages/service.html">service</a>
@@ -71,7 +111,9 @@
               <a class="nav-link" href="../pages/equipment.html">equipment</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../pages/products.html">products</a>
+              <a class="nav-link active" href="../pages/products.html"
+                >products</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../pages/contact.html">contact</a>
@@ -80,7 +122,7 @@
         </div>
       </div>
     </nav>
-    <div class="container-fluid hero" style="height: 200px;">
+    <div class="container-fluid hero" style="height: 200px">
       <div class="container">
         <h4>Sales. Service. Supplies.</h4>
         <h4>Welcome to Alpha Enterprise</h4>
@@ -133,44 +175,44 @@
         </div>
       </div>
     </div>
-    <footer>
-      <div class="container-fluid hero">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h6>Phone</h6>
-              <p>
-                Main (209) 334-2464 <br />
-                Toll Free (800) 235-2800
-              </p>
-            </div>
-            <div class="col">
-              <h6>Fax</h6>
-              <p>
-                Main (209) 334-4718 <br />
-                Toll Free (800) 480-2800
-              </p>
-            </div>
-            <div class="col">
-              <h6>Corporate Office</h6>
-              <p>
-                23 Maxwell St. <br />
-                Lodi, CA 95240
-              </p>
-            </div>
-            <div class="col">
-              <h6>Email</h6>
-              <p>alpha@alpha-ent.net0</p>
+    <footer class="mt-auto">
+        <div class="container-fluid hero p-3">
+          <div class="container">
+            <div class="row">
+              <div class="col-3">
+                <h6>Phone</h6>
+                <p>
+                  Main (209) 334-2464 <br />
+                  Toll Free (800) 235-2800
+                </p>
+              </div>
+              <div class="col-3">
+                <h6>Fax</h6>
+                <p>
+                  Main (209) 334-4718 <br />
+                  Toll Free (800) 480-2800
+                </p>
+              </div>
+              <div class="col-3">
+                <h6>Corporate Office</h6>
+                <p>
+                  23 Maxwell St. <br />
+                  Lodi, CA 95240
+                </p>
+              </div>
+              <div class="col-3">
+                <h6>Email</h6>
+                <p>alpha@alpha-ent.net0</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"
+      ></script>
   </body>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"
-  ></script>
   <script src="../scripts/app.js"></script>
 </html>
