@@ -3,6 +3,14 @@ body {
   background-image: url(../assets/background.jpg);
 }
 
+.navImage{
+  background-image: url(../assets/alphalonglogo.png);
+  min-height: 100px;
+  background-position: center;
+  background-size: cover;
+  position: relative; 
+}
+
 .text-box {
   background-color: #2d3143cc;
   color: #e9e9e9;
