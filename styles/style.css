@@ -1,18 +1,18 @@
-
 body {
-    min-height: 100%;
+  min-height: 100%;
   background-image: url(../assets/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  font-family: "Esteban", serif;
 }
 
-.navImage{
+.navImage {
   background-image: url(../assets/alphalonglogo.png);
   min-height: 100px;
   background-position: center;
   background-size: cover;
-  position: relative; 
+  position: relative;
 }
 
 .text-box {
@@ -29,25 +29,25 @@ body {
   font-family: "Orelega One", serif;
 }
 
-.asterisk{
-    color: #FD0100;
+.asterisk {
+  color: #fd0100;
 }
 
 .input-box,
 .form-control,
-.form-check-input{
-    background-color: #BFC0C0;
-    margin-bottom: 15px;
+.form-check-input {
+  background-color: #bfc0c0;
+  margin-bottom: 15px;
 }
 
-.btn-ae{
-    background-color: #5D81DC;
-    color: black;
+.btn-ae {
+  background-color: #5d81dc;
+  color: black;
 }
 
-.btn-ae:hover{
-    background-color: #7f9ce4;
-    color: black;
+.btn-ae:hover {
+  background-color: #7f9ce4;
+  color: black;
 }
 
 /* .btn-ae:{
@@ -64,10 +64,6 @@ h6 {
   font-family: "Merriweather", serif;
 }
 
-body {
-  font-family: "Esteban", serif;
-}
-
-hr{
-    color: white;
+hr {
+  color: white;
 }
