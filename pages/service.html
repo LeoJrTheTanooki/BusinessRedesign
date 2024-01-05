@@ -16,7 +16,8 @@
       href="https://fonts.googleapis.com/css2?family=Esteban&family=Merriweather:wght@700&family=Orelega+One&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+
     <!-- <style>
       .container,
       .container-fluid {
@@ -79,129 +80,93 @@
     </style> -->
   </head>
   <body class="d-flex flex-column min-vh-100">
-    <!-- Desktop Navbar -->
-    <nav
-      class="navbar navbar-expand-lg bg-body-tertiary navImage navText d-xl-flex d-none"
-    >
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navImage navText">
       <div class="container-fluid">
         <ul class="nav navbar-nav"></ul>
         <ul class="nav navbar-right">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./index.html"
+            <a class="nav-link active" aria-current="page" href="../index.html"
               >home</a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./pages/service.html">service</a>
+            <a class="nav-link" href="../pages/service.html">service</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./pages/equipment.html">equipment</a>
+            <a class="nav-link" href="../pages/equipment.html">equipment</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./pages/products.html">products</a>
+            <a class="nav-link" href="../pages/products.html">products</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./pages/contact.html">contact</a>
+            <a class="nav-link" href="../pages/contact.html">contact</a>
           </li>
         </ul>
       </div>
     </nav>
-    <!-- Desktop Navbar End -->
-
-    <!-- mobile navbar start -->
-    <nav
-      class="navbar navbar-expand-lg bg-body-tertiary navImage navText d-xl-none d-flex"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="nav navbar-nav"></ul>
-          <ul class="nav navbar-right">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">service</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">equipment</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">products</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- mobile navbar end -->
 
     <div class="container-fluid hero d-flex" style="height: 200px">
       <div class="container d-flex">
         <div class="row m-auto align-items-center">
-          <h4>Sales. Service. Supplies.</h4>
-          <h4>Welcome to Alpha Enterprise</h4>
+          <h4>Service</h4>
           <p>
-            Your best source for new and used equipment, service and floor care
-            supplies. Call today to speak to one of our knowledgeable associates
-            and get the help you need to get the job done correctly the first
-            time, every time.
+            Alpha Enterprise provides repairs, planned maintenance and
+            replacement parts for all types of floor cleaning equipment
+            including battery-powered scrubbers and buffers, sweepers,
+            side-by-side floor machines, propane powered burnishers, carpet
+            extractors and much more.
           </p>
         </div>
       </div>
     </div>
 
     <div class="container">
-      <div class="row m-3">
-        <div class="col text-box p-3">
-          <h6>About us.</h6>
+      <div class="row m-3 p-3 text-box">
+        <div class="col-6">
+          <h6>Request Service</h6>
           <p>
-            Alpha Enterprise Corporation was founded on June 1, 1975 by K.D.
-            "Doug" Gamblin. Building on years of experience in the floor care
-            industry, Doug's aim was to provide fast, excellent service for
-            floor cleaning equipment.
+            To schedule a repair on your equipment or to learn more about our
+            Preventative Maintenance programs, call us or complete the form in
+            our contact page. Once submitted, your request will be forwarded to
+            our Service Dispatcher who will be in touch with you to schedule a
+            technician visit.
           </p>
+          <hr />
+          <h6>Planned Maintenance</h6>
           <p>
-            We have grown from one mobile service tech who assisted customers
-            along the northern and central California coast to a fleet of techs
-            who cover all of California and parts of Nevada. At Alpha, we
-            believe in "getting it right the first time." All our service techs
-            receive extensive training in floor care equipment maintenance and
-            repairs.
+            Regular Preventative Maintenance service saves you money over the
+            life of your machine and helps keep the equipment in optimum working
+            condition by ensuring moving parts are lubricated, properly adjusted
+            and minor repairs can be spotted and corrected before they they turn
+            into expensive problems. Alpha can design a PM program for you based
+            on your facility's particular equipment and service needs. We
+            typically offer 30, 60, and 90-day PM programs and will work with
+            you to find the program that suits your needs. Contact Alpha today
+            for more information.
           </p>
-          <p>
-            Our sales employees are trained in many types of floor care
-            maintenance and are knowledgeable in procedures to care for vinyl
-            (VCT), concrete and tile floors.
-          </p>
+          <hr />
+          <img src="../assets/Parts.png" alt="" style="width: 100%" />
         </div>
-        <div class="col text-center">
-          <div class="row">
-            <div class="col">
-              <img src="./assets/Van.png" alt="alpha enterprise Van" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <img
-                src="./assets/alpha 1.png"
-                alt="alpha enterprise Warehouse"
-              />
-            </div>
-          </div>
+        <div class="col-6">
+          <img src="../assets/Repairs.png" alt="" style="width: 100%" />
+          <hr />
+          <h6>Parts</h6>
+          <p>
+            Our Lodi, CA service center stocks thousands of commonly used parts
+            and we ship anywhere in the USA. Need help finding your part? Our
+            knowledgeable parts department can help you determine the correct
+            parts for your repair. Give us a call today.
+          </p>
+          <hr />
+          <h6>Planned Maintenance</h6>
+          <p>
+            Alpha service techs carry many commonly replaced items and often can
+            repair equipment on the first trip -- saving our customers both time
+            AND money! When a repair goes beyond what can be done on-site, our
+            in-house service techs in our Lodi service center can perform the
+            repair in our full shop and have immediate access to our extensive
+            parts inventory.
+          </p>
         </div>
       </div>
     </div>
@@ -246,5 +211,5 @@
       crossorigin="anonymous"
     ></script>
   </body>
-  <script src="./scripts/app.js"></script>
+  <script src="../scripts/app.js"></script>
 </html>
