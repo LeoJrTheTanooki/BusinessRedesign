@@ -17,7 +17,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../styles/style.css" />
-    <style>
+    <!-- <style>
       .container,
       .container-fluid {
         border: solid red;
@@ -76,7 +76,7 @@
       .col {
         border: solid yellow;
       }
-    </style>
+    </style> -->
   </head>
   <body class="d-flex flex-column min-vh-100">
     <nav class="navbar navbar-expand-lg" style="background-color: #e9e9e980">
@@ -100,10 +100,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="../index.html"
+              <a class="nav-link" aria-current="page" href="../index.html"
                 >home</a
               >
             </li>
@@ -125,6 +122,7 @@
         </div>
       </div>
     </nav>
+
     <div class="container-fluid hero d-flex" style="height: 200px">
       <div class="container d-flex">
         <div class="row m-auto align-items-center">
@@ -137,76 +135,142 @@
         </div>
       </div>
     </div>
+
     <div class="container">
-      <div class="row m-3 text-box">
-        <div class="col">
+      <div class="row m-3 p-3 text-box">
+        <div class="col-12">
           <p><span class="asterisk">*</span> Indicates required field</p>
-          <p>Name <span class="asterisk">*</span></p>
-          <span
-            ><input type="text" class="input-box" /><input
-              type="text"
-              class="input-box"
-          /></span>
-          <p>Email <span class="asterisk">*</span></p>
-          <input type="text" class="input-box" />
-          <p>Company <span class="asterisk">*</span></p>
-          <input type="text" class="input-box" />
-          <p>Daytime Phone</p>
-          <input type="text" class="input-box" /> <br />
-          <span
-            ><p>
-              <button></button>I agree to receiving marketing and promotional
-              materials <span class="asterisk">*</span>
-            </p></span
-          >
         </div>
-        <div class="col">
-          <p>
-            Message
-            <span class="asterisk"><span class="asterisk">*</span></span>
-          </p>
-          <input type="text" class="input-box" />
-        </div>
-      </div>
-    </div>
-    <footer class="mt-auto">
-        <div class="container-fluid hero p-3">
-          <div class="container">
-            <div class="row">
-              <div class="col-3">
-                <h6>Phone</h6>
-                <p>
-                  Main (209) 334-2464 <br />
-                  Toll Free (800) 235-2800
-                </p>
+        <div class="col-6">
+          <div class="row g-3">
+            <div class="col-12">
+              <label for="inputName" class="form-label"
+                >Name <span class="asterisk">*</span></label
+              >
+              <div class="row">
+                <div class="col-6">
+                  <input
+                    type="text"
+                    id="inputName"
+                    class="form-control"
+                    placeholder="First Name"
+                    aria-label="First Name"
+                  />
+                </div>
+                <div class="col-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Last Name"
+                    aria-label="Last Name"
+                  />
+                </div>
               </div>
-              <div class="col-3">
-                <h6>Fax</h6>
-                <p>
-                  Main (209) 334-4718 <br />
-                  Toll Free (800) 480-2800
-                </p>
-              </div>
-              <div class="col-3">
-                <h6>Corporate Office</h6>
-                <p>
-                  23 Maxwell St. <br />
-                  Lodi, CA 95240
-                </p>
-              </div>
-              <div class="col-3">
-                <h6>Email</h6>
-                <p>alpha@alpha-ent.net0</p>
+            </div>
+            <div class="col-12">
+              <label for="inputEmail" class="form-label"
+                >Email <span class="asterisk">*</span></label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="inputEmail"
+                aria-describedby="emailHelp"
+              />
+            </div>
+
+            <div class="col-12">
+              <label for="inputCity" class="form-label"
+                >Company <span class="asterisk">*</span></label
+              >
+              <input type="text" class="form-control" id="inputCity" />
+            </div>
+
+            <div class="col-md-7">
+              <label for="inputCity" class="form-label">Daytime Phone</label>
+              <input type="text" class="form-control" id="inputCity" />
+            </div>
+
+            <div class="col-12">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="gridCheck"
+                />
+                <label class="form-check-label" for="gridCheck">
+                  I agree to receiving marketing and promotional materials
+                  <span class="asterisk">*</span>
+                </label>
               </div>
             </div>
           </div>
         </div>
-      </footer>
-      <script
+        <div class="col-6">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >Message <span class="asterisk">*</span></label
+          >
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="15"
+          ></textarea>
+        </div>
+        <div class="col text-center">
+          <button class="btn btn-ae" type="submit">Submit</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container text-center">
+      <h4>Location</h4>
+      <p>
+        Corporate Office <br />
+        23 Maxwell St <br />
+        Lodi, CA 95240
+      </p>
+      <!-- Insert Google Maps embed here -->
+    </div>
+
+    <footer class="mt-auto">
+      <div class="container-fluid hero p-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-3">
+              <h6>Phone</h6>
+              <p>
+                Main (209) 334-2464 <br />
+                Toll Free (800) 235-2800
+              </p>
+            </div>
+            <div class="col-3">
+              <h6>Fax</h6>
+              <p>
+                Main (209) 334-4718 <br />
+                Toll Free (800) 480-2800
+              </p>
+            </div>
+            <div class="col-3">
+              <h6>Corporate Office</h6>
+              <p>
+                23 Maxwell St. <br />
+                Lodi, CA 95240
+              </p>
+            </div>
+            <div class="col-3">
+              <h6>Email</h6>
+              <p>alpha@alpha-ent.net0</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
-      ></script>
-    </body>
+    ></script>
+  </body>
   <script src="../scripts/app.js"></script>
 </html>
