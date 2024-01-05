@@ -2,6 +2,33 @@
 body {
   background-image: url(../assets/background.jpg);
 }
+a {
+  color: black;
+  margin-bottom: 20px;
+  padding: 0px 30px;
+  border: 3px solid transparent;
+  text-decoration: none;
+}
+a:link, a:visited {
+ 
+  color: black;
+
+  text-align: center;
+  text-decoration: none;
+  padding: 0px 30px;
+  border: 3px solid transparent;
+  
+}
+a:hover, a:active {
+  color: black;
+  background-color: transparent;
+  border: 3px solid black;
+  padding: 0px 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
 
 .navImage{
   background-image: url(../assets/alphalonglogo.png);
@@ -10,18 +37,13 @@ body {
   background-size: cover;
   position: relative; 
 }
-.navText{
+.navText {
   font-size: 20px;
-  
 
-
-
-
-
-
-  
 
 }
+
+
 
 .text-box {
   background-color: #2d3143cc;
