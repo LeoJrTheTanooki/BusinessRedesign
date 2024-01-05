@@ -79,14 +79,43 @@
     </style> -->
   </head>
   <body class="d-flex flex-column min-vh-100">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary navImage navText">
-      <div class="container-fluid">
-        <ul class="nav navbar-nav"></ul>
-        <ul class="nav navbar-right">
+         <!-- desktop nav start -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary navImage navText d-xl-flex d-none">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav"></ul>
+      <ul class="nav navbar-right">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./index.html">home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./pages/service.html">service</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./pages/equipment.html">equipment</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./pages/products.html">products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./pages/contact.html">contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- desktop nav end -->
+
+  <!-- mobile nav start -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary navText d-xl-none d-flex">
+    <div class="container-fluid">
+      <img class="mNavImg" src="./assets/alpha_short.png" alt="alpha logo">
+      <button id="hamBtn" class="navbar-toggler hamBtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <span class="navbar-toggler-icon"></span> -->
+        <img id="hamImg" src="./assets/Toolbox.png" alt="toolbox image">
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./index.html"
-              >home</a
-            >
+            <a class="nav-link active" aria-current="page" href="./index.html">home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./pages/service.html">service</a>
@@ -101,53 +130,11 @@
             <a class="nav-link" href="./pages/contact.html">contact</a>
           </li>
         </ul>
+
       </div>
-    </nav>
-
-    <!-- navbar start -->
-    <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary navImage navText">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"
-          ></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse " id="navbarNav">
-
-          <ul class="nav navbar-nav">
-
-          </ul>
-          <ul class="nav navbar-right">
-  
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">service</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">equipment</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">products</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">contact</a>
-              </li>
-          </ul>
-
-        </div>
-      </div>
-    </nav> -->
-<!-- navbar end -->
+    </div>
+  </nav>
+  <!-- mobile nav end -->
 
     <div class="container-fluid hero d-flex" style="height: 200px">
       <div class="container d-flex">
