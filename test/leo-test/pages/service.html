@@ -18,7 +18,7 @@
     />
     <link rel="stylesheet" href="../styles/style.css" />
 
-    <style>
+    <!-- <style>
       .container,
       .container-fluid {
         border: solid red;
@@ -77,47 +77,18 @@
       .col {
         border: solid yellow;
       }
-    </style>
-</head>
+    </style> -->
 
-<body class="d-flex flex-column min-vh-100">
-  <!-- desktop nav start -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary navImage navText d-xl-flex d-none">
-    <div class="container-fluid">
-      <ul class="nav navbar-nav"></ul>
-      <ul class="nav navbar-right">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="../index.html">home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../pages/service.html">service</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../pages/equipment.html">equipment</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../pages/products.html">products</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../pages/contact.html">contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <!-- desktop nav end -->
-
-  <!-- mobile nav start -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary navText d-xl-none d-flex">
-    <div class="container-fluid">
-      <img class="mNavImg" src="../assets/alpha_short.png" alt="alpha logo">
-      <button id="hamBtn" class="navbar-toggler hamBtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <!-- <span class="navbar-toggler-icon"></span> -->
-        <img id="hamImg" src="../assets/Toolbox.png" alt="toolbox image">
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navImage navText">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav"></ul>
+        <ul class="nav navbar-right">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../index.html">home</a>
+            <a class="nav-link active" aria-current="page" href="../index.html"
+              >home</a
+            >
           </li>
           <li class="nav-item">
             <a class="nav-link" href="../pages/service.html">service</a>
@@ -132,26 +103,23 @@
             <a class="nav-link" href="../pages/contact.html">contact</a>
           </li>
         </ul>
+      </div>
+    </nav>
 
+    <div class="container-fluid hero d-flex" style="height: 200px">
+      <div class="container d-flex">
+        <div class="row m-auto align-items-center">
+          <h4>Service</h4>
+          <p>
+            Alpha Enterprise provides repairs, planned maintenance and
+            replacement parts for all types of floor cleaning equipment
+            including battery-powered scrubbers and buffers, sweepers,
+            side-by-side floor machines, propane powered burnishers, carpet
+            extractors and much more.
+          </p>
+        </div>
       </div>
     </div>
-  </nav>
-  <!-- mobile nav end -->
-
-  <div class="container-fluid hero d-flex" style="height: 200px">
-    <div class="container d-flex">
-      <div class="row m-auto align-items-center">
-        <h4>Service</h4>
-        <p>
-          Alpha Enterprise provides repairs, planned maintenance and
-          replacement parts for all types of floor cleaning equipment
-          including battery-powered scrubbers and buffers, sweepers,
-          side-by-side floor machines, propane powered burnishers, carpet
-          extractors and much more.
-        </p>
-      </div>
-    </div>
-  </div>
 
     <div class="container">
       <div class="row m-3 p-3 text-box">
@@ -243,10 +211,11 @@
       </div>
     </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-</body>
-<script src="../scripts/nav.js"></script>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <script src="../scripts/app.js"></script>
 </html>

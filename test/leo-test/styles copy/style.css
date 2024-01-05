@@ -33,21 +33,6 @@ a:hover, a:active {
   text-decoration: none;
   border-radius: 5px;
 }
-.hamBtn{
-  height: 90px;
-  width: 100px;
-  margin-top: 10px;
-  border: solid black 5px;
-}
-.vanAlpha{
-  contain:content;  
-}
-.vanPic{
-  width: 100%;
-}
-
-
-
 
 
 .navImage {
@@ -56,11 +41,6 @@ a:hover, a:active {
   background-position: left;
   background-size: cover;
   position: relative;
-}
-.mNavImg{
-  width: 75%;
-  
-
 }
 .navText {
   font-size: 20px;
