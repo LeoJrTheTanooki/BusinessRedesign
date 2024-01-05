@@ -1,6 +1,10 @@
-
 body {
+  min-height: 100%;
   background-image: url(../assets/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Esteban", serif;
 }
 a {
   color: black;
@@ -30,20 +34,16 @@ a:hover, a:active {
 }
 
 
-.navImage{
-  background-image: url(../assets/alphalonglogo.png);
+.navImage {
+  background-image: url(../assets/alphalonglogovector.png);
   min-height: 100px;
   background-position: left;
   background-size: cover;
-  position: relative; 
+  position: relative;
 }
 .navText {
   font-size: 20px;
-
-
 }
-
-
 
 .text-box {
   background-color: #2d3143cc;
@@ -59,6 +59,36 @@ a:hover, a:active {
   font-family: "Orelega One", serif;
 }
 
+.asterisk {
+  color: #fd0100;
+}
+
+.input-box,
+.form-control:enabled,
+.form-check-input {
+  background-color: #bfc0c0;
+  margin-bottom: 15px;
+}
+
+/* .form-control:enabled{
+  background-color: #5d81dc;
+} */
+
+.btn-ae {
+  background-color: #5d81dc;
+  color: black;
+}
+
+.btn-ae:hover {
+  background-color: #7f9ce4;
+  color: black;
+}
+
+.btn-ae:active {
+  background-color: #a1acc8 !important;
+  color: black !important;
+}
+
 h1,
 h2,
 h3,
@@ -68,6 +98,6 @@ h6 {
   font-family: "Merriweather", serif;
 }
 
-p {
-  font-family: "Esteban", serif;
+hr {
+  color: white;
 }
