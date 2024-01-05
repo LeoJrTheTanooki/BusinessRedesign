@@ -17,7 +17,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../styles/style.css" />
-    <!-- <style>
+    <style>
       .container,
       .container-fluid {
         border: solid red;
@@ -76,7 +76,7 @@
       .col {
         border: solid yellow;
       }
-    </style> -->
+    </style>
   </head>
   <body class="d-flex flex-column min-vh-100">
     <nav class="navbar navbar-expand-lg bg-body-tertiary navImage navText">
@@ -129,14 +129,14 @@
         <div class="col-6">
           <div class="row g-3">
             <div class="col-12">
-              <label for="inputName" class="form-label"
+              <label for="inputFirstName" class="form-label"
                 >Name <span class="asterisk">*</span></label
               >
               <div class="row">
                 <div class="col-6">
                   <input
                     type="text"
-                    id="inputName"
+                    id="inputFirstName"
                     class="form-control"
                     placeholder="First Name"
                     aria-label="First Name"
@@ -145,6 +145,7 @@
                 <div class="col-6">
                   <input
                     type="text"
+                    id="inputLastName"
                     class="form-control"
                     placeholder="Last Name"
                     aria-label="Last Name"
@@ -165,15 +166,15 @@
             </div>
 
             <div class="col-12">
-              <label for="inputCity" class="form-label"
+              <label for="inputCompany" class="form-label"
                 >Company <span class="asterisk">*</span></label
               >
-              <input type="text" class="form-control" id="inputCity" />
+              <input type="text" class="form-control" id="inputCompany" />
             </div>
 
             <div class="col-md-7">
-              <label for="inputCity" class="form-label">Daytime Phone</label>
-              <input type="text" class="form-control" id="inputCity" />
+              <label for="inputPhone" class="form-label">Daytime Phone</label>
+              <input type="text" class="form-control" id="inputPhone" />
             </div>
 
             <div class="col-12">
@@ -181,9 +182,9 @@
                 <input
                   class="form-check-input"
                   type="checkbox"
-                  id="gridCheck"
+                  id="marketCheck"
                 />
-                <label class="form-check-label" for="gridCheck">
+                <label class="form-check-label" for="marketCheck">
                   I agree to receiving marketing and promotional materials
                   <span class="asterisk">*</span>
                 </label>
@@ -192,12 +193,12 @@
           </div>
         </div>
         <div class="col-6">
-          <label for="exampleFormControlTextarea1" class="form-label"
+          <label for="messageTextField" class="form-label"
             >Message <span class="asterisk">*</span></label
           >
           <textarea
             class="form-control"
-            id="exampleFormControlTextarea1"
+            id="messageTextField"
             rows="15"
           ></textarea>
         </div>
@@ -221,28 +222,28 @@
       <div class="container-fluid hero p-3">
         <div class="container">
           <div class="row">
-            <div class="col-3">
+            <div class="col-12 col-md-3">
               <h6>Phone</h6>
               <p>
                 Main (209) 334-2464 <br />
                 Toll Free (800) 235-2800
               </p>
             </div>
-            <div class="col-3">
+            <div class="col-12 col-md-3">
               <h6>Fax</h6>
               <p>
                 Main (209) 334-4718 <br />
                 Toll Free (800) 480-2800
               </p>
             </div>
-            <div class="col-3">
+            <div class="col-12 col-md-3">
               <h6>Corporate Office</h6>
               <p>
                 23 Maxwell St. <br />
                 Lodi, CA 95240
               </p>
             </div>
-            <div class="col-3">
+            <div class="col-12 col-md-3">
               <h6>Email</h6>
               <p>alpha@alpha-ent.net0</p>
             </div>

@@ -14,17 +14,8 @@ body {
   background-size: cover;
   position: relative;
 }
-.navText{
+.navText {
   font-size: 20px;
-  
-
-
-
-
-
-
-  
-
 }
 
 .text-box {
@@ -46,11 +37,15 @@ body {
 }
 
 .input-box,
-.form-control,
+.form-control:enabled,
 .form-check-input {
   background-color: #bfc0c0;
   margin-bottom: 15px;
 }
+
+/* .form-control:enabled{
+  background-color: #5d81dc;
+} */
 
 .btn-ae {
   background-color: #5d81dc;
@@ -62,10 +57,10 @@ body {
   color: black;
 }
 
-/* .btn-ae:{
-    background-color: #ffffff;
-    color: black;
-} */
+.btn-ae:active {
+  background-color: #a1acc8 !important;
+  color: black !important;
+}
 
 h1,
 h2,
