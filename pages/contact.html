@@ -17,7 +17,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../styles/style.css" />
-    <style>
+
+    <!-- <style>
       .container,
       .container-fluid {
         border: solid red;
@@ -76,44 +77,15 @@
       .col {
         border: solid yellow;
       }
-    </style>
+    </style> -->
+
   </head>
   <body class="d-flex flex-column min-vh-100">
     <!-- desktop nav start -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary navImage navText d-xl-flex d-none">
-    <div class="container-fluid">
-      <ul class="nav navbar-nav"></ul>
-      <ul class="nav navbar-right">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="../index.html">home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../pages/service.html">service</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../pages/equipment.html">equipment</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../pages/products.html">products</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../pages/contact.html">contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <!-- desktop nav end -->
-
-  <!-- mobile nav start -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary navText d-xl-none d-flex">
-    <div class="container-fluid">
-      <img class="mNavImg" src="../assets/alpha_short.png" alt="alpha logo">
-      <button id="hamBtn" class="navbar-toggler hamBtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <!-- <span class="navbar-toggler-icon"></span> -->
-        <img id="hamImg" src="../assets/Toolbox.png" alt="toolbox image">
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navImage navText d-xl-flex d-none">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav"></ul>
+        <ul class="nav navbar-right">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="../index.html">home</a>
           </li>
@@ -130,10 +102,20 @@
             <a class="nav-link" href="../pages/contact.html">contact</a>
           </li>
         </ul>
-
       </div>
-    </div>
-  </nav>
+    </nav>
+    <!-- desktop nav end -->
+  
+    <!-- mobile nav start -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navText d-xl-none d-flex">
+      <div class="container-fluid">
+        <img class="mNavImg" src="../assets/alpha_short.png" alt="alpha logo">
+        <button id="hamBtn" class="navbar-toggler hamBtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <img id="hamImg" src="../assets/Toolbox.png" alt="toolbox image">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
   <!-- mobile nav end -->
 
     <div class="container-fluid hero d-flex" style="height: 200px">
@@ -154,14 +136,14 @@
         <div class="col-12">
           <p><span class="asterisk">*</span> Indicates required field</p>
         </div>
-        <div class="col-6">
+        <div class="col-12 col-md-6">
           <div class="row g-3">
             <div class="col-12">
               <label for="inputFirstName" class="form-label"
                 >Name <span class="asterisk">*</span></label
               >
               <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                   <input
                     type="text"
                     id="inputFirstName"
@@ -170,7 +152,7 @@
                     aria-label="First Name"
                   />
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                   <input
                     type="text"
                     id="inputLastName"
@@ -220,7 +202,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-12 col-md-6">
           <label for="messageTextField" class="form-label"
             >Message <span class="asterisk">*</span></label
           >
@@ -249,29 +231,29 @@
     <footer class="mt-auto">
       <div class="container-fluid hero p-3">
         <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-3">
+          <div class="row mx-5">
+            <div class="col-12 col-lg-3 col-sm-6">
               <h6>Phone</h6>
               <p>
                 Main (209) 334-2464 <br />
                 Toll Free (800) 235-2800
               </p>
             </div>
-            <div class="col-12 col-md-3">
+            <div class="col-12 col-lg-3 col-sm-6">
               <h6>Fax</h6>
               <p>
                 Main (209) 334-4718 <br />
                 Toll Free (800) 480-2800
               </p>
             </div>
-            <div class="col-12 col-md-3">
+            <div class="col-12 col-lg-3 col-sm-6">
               <h6>Corporate Office</h6>
               <p>
                 23 Maxwell St. <br />
                 Lodi, CA 95240
               </p>
             </div>
-            <div class="col-12 col-md-3">
+            <div class="col-12 col-lg-3 col-sm-6">
               <h6>Email</h6>
               <p>alpha@alpha-ent.net0</p>
             </div>
