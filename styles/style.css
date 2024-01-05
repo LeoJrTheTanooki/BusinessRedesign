@@ -20,7 +20,7 @@ a:link, a:visited {
   
 }
 a:hover, a:active {
-  color: black;
+  color: black !important;
   background-color: transparent;
   border: 3px solid black;
   padding: 0px 30px;
@@ -33,7 +33,7 @@ a:hover, a:active {
 .navImage{
   background-image: url(../assets/alphalonglogo.png);
   min-height: 100px;
-  background-position: center;
+  background-position: left;
   background-size: cover;
   position: relative; 
 }
