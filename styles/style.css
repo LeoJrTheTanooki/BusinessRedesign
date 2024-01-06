@@ -39,7 +39,12 @@ a:hover, a:active {
   margin-top: 10px;
   border: solid black 5px;
 }
-
+.vanAlpha{
+  contain:content;  
+}
+.vanPic{
+  width: 100%;
+}
 
 
 
@@ -53,7 +58,7 @@ a:hover, a:active {
   position: relative;
 }
 .mNavImg{
-  width: 80%;
+  width: 75%;
   
 
 }
