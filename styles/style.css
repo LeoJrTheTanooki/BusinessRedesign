@@ -39,7 +39,12 @@ a:hover, a:active {
   margin-top: 10px;
   border: solid black 5px;
 }
-
+.vanAlpha{
+  contain:content;  
+}
+.vanPic{
+  width: 100%;
+}
 
 
 
