@@ -16,6 +16,10 @@
       href="https://fonts.googleapis.com/css2?family=Esteban&family=Merriweather:wght@700&family=Orelega+One&display=swap"
       rel="stylesheet"
     />
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDx974bT_2zTPsMfHY3zX2VCfiD1Ncigmk&callback=console.debug&libraries=maps,marker&v=beta"
+    ></script>
     <link rel="stylesheet" href="../styles/style.css" />
     <style>
       .container,
@@ -79,43 +83,17 @@
     </style>
   </head>
   <body class="d-flex flex-column min-vh-100">
-  <!-- desktop nav start -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary navImage navText d-xl-flex d-none">
-    <div class="container-fluid">
-      <ul class="nav navbar-nav"></ul>
-      <ul class="nav navbar-right">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="../index.html">home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../pages/service.html">service</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../pages/equipment.html">equipment</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../pages/products.html">products</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../pages/contact.html">contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <!-- desktop nav end -->
-
-  <!-- mobile nav start -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary navText d-xl-none d-flex">
-    <div class="container-fluid">
-      <img class="mNavImg" src="../assets/alpha_short.png" alt="alpha logo">
-      <button id="hamBtn" class="navbar-toggler hamBtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <!-- <span class="navbar-toggler-icon"></span> -->
-        <img id="hamImg" src="../assets/Toolbox.png" alt="toolbox image">
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <!-- desktop nav start -->
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary navImage navText d-xl-flex d-none"
+    >
+      <div class="container-fluid">
+        <ul class="nav navbar-nav"></ul>
+        <ul class="nav navbar-right">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../index.html">home</a>
+            <a class="nav-link active" aria-current="page" href="../index.html"
+              >home</a
+            >
           </li>
           <li class="nav-item">
             <a class="nav-link" href="../pages/service.html">service</a>
@@ -130,11 +108,56 @@
             <a class="nav-link" href="../pages/contact.html">contact</a>
           </li>
         </ul>
-
       </div>
-    </div>
-  </nav>
-  <!-- mobile nav end -->
+    </nav>
+    <!-- desktop nav end -->
+
+    <!-- mobile nav start -->
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary navText d-xl-none d-flex"
+    >
+      <div class="container-fluid">
+        <img class="mNavImg" src="../assets/alpha_short.png" alt="alpha logo" />
+        <button
+          id="hamBtn"
+          class="navbar-toggler hamBtn"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <img id="hamImg" src="../assets/Toolbox.png" alt="toolbox image" />
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../index.html"
+                >home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/service.html">service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/equipment.html">equipment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/products.html">products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/contact.html">contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- mobile nav end -->
 
     <div class="container-fluid hero d-flex" style="height: 200px">
       <div class="container d-flex">
@@ -236,14 +259,27 @@
       </div>
     </div>
 
-    <div class="container text-center">
+    <div class="container text-center mb-3" style="width: 80%;">
       <h4>Location</h4>
       <p>
         Corporate Office <br />
         23 Maxwell St <br />
         Lodi, CA 95240
       </p>
-      <!-- Insert Google Maps embed here -->
+      <!-- Google Maps Embed -->
+      <gmp-map
+        style="height: 20em; margin: 0; padding: 0"
+        center="38.112972259521484,-121.27201080322266"
+        zoom="14"
+        map-id="DEMO_MAP_ID"
+      >
+        <gmp-advanced-marker
+          position="38.112972259521484,-121.27201080322266"
+          title="My location"
+        >
+        </gmp-advanced-marker>
+      </gmp-map>
+      <!-- Google Maps Embed End -->
     </div>
 
     <footer class="mt-auto">
