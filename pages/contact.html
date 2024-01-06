@@ -21,6 +21,7 @@
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDx974bT_2zTPsMfHY3zX2VCfiD1Ncigmk&callback=console.debug&libraries=maps,marker&v=beta"
     ></script>
     <link rel="stylesheet" href="../styles/style.css" />
+
     <style>
       .container,
       .container-fluid {
@@ -81,6 +82,7 @@
         border: solid yellow;
       }
     </style>
+
   </head>
   <body class="d-flex flex-column min-vh-100">
     <!-- desktop nav start -->
@@ -120,26 +122,27 @@
         <img class="mNavImg" src="../assets/alpha_short.png" alt="alpha logo" />
         <button
           id="hamBtn"
-          class="navbar-toggler hamBtn"
+          class="navbar-toggler hamBtn p-0"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          style="width: 70px; height: 70px"
         >
           <!-- <span class="navbar-toggler-icon"></span> -->
-          <img id="hamImg" src="../assets/Toolbox.png" alt="toolbox image" />
+          <img
+            id="hamImg"
+            src="../assets/Toolbox.png"
+            alt="toolbox image"
+            style="text-align: center"
+          />
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="../index.html"
-                >home</a
-              >
+              <a class="nav-link" href="../index.html">home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../pages/service.html">service</a>
@@ -177,14 +180,14 @@
         <div class="col-12">
           <p><span class="asterisk">*</span> Indicates required field</p>
         </div>
-        <div class="col-6">
+        <div class="col-12 col-md-6">
           <div class="row g-3">
             <div class="col-12">
               <label for="inputFirstName" class="form-label"
                 >Name <span class="asterisk">*</span></label
               >
               <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-lg-6">
                   <input
                     type="text"
                     id="inputFirstName"
@@ -193,7 +196,7 @@
                     aria-label="First Name"
                   />
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-lg-6">
                   <input
                     type="text"
                     id="inputLastName"
@@ -243,7 +246,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-12 col-md-6">
           <label for="messageTextField" class="form-label"
             >Message <span class="asterisk">*</span></label
           >
@@ -259,7 +262,7 @@
       </div>
     </div>
 
-    <div class="container text-center mb-3" style="width: 80%;">
+    <div class="container text-center mb-3" style="width: 80%">
       <h4>Location</h4>
       <p>
         Corporate Office <br />
@@ -285,29 +288,29 @@
     <footer class="mt-auto">
       <div class="container-fluid hero p-3">
         <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-3">
+          <div class="row mx-5">
+            <div class="col-12 col-lg-3 col-sm-6">
               <h6>Phone</h6>
               <p>
                 Main (209) 334-2464 <br />
                 Toll Free (800) 235-2800
               </p>
             </div>
-            <div class="col-12 col-md-3">
+            <div class="col-12 col-lg-3 col-sm-6">
               <h6>Fax</h6>
               <p>
                 Main (209) 334-4718 <br />
                 Toll Free (800) 480-2800
               </p>
             </div>
-            <div class="col-12 col-md-3">
+            <div class="col-12 col-lg-3 col-sm-6">
               <h6>Corporate Office</h6>
               <p>
                 23 Maxwell St. <br />
                 Lodi, CA 95240
               </p>
             </div>
-            <div class="col-12 col-md-3">
+            <div class="col-12 col-lg-3 col-sm-6">
               <h6>Email</h6>
               <p>alpha@alpha-ent.net0</p>
             </div>
