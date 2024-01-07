@@ -17,7 +17,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/style.css" />
-<!-- 
+    <!-- 
     <style>
       .container,
       .container-fluid {
@@ -78,84 +78,87 @@
         border: solid yellow;
       }
     </style> -->
-    
   </head>
   <body class="d-flex flex-column min-vh-100">
-     <!-- desktop nav start -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary navImage navText d-xl-flex d-none">
-    <div class="container-fluid">
-      <ul class="nav navbar-nav"></ul>
-      <ul class="nav navbar-right">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="./index.html">home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./pages/service.html">service</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./pages/equipment.html">equipment</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./pages/products.html">products</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./pages/contact.html">contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <!-- desktop nav end -->
-
-  <!-- mobile nav start -->
-  <nav
-  class="navbar navbar-expand-lg bg-body-tertiary navText d-xl-none d-flex"
->
-  <div class="container-fluid">
-    <img class="mNavImg" src="../assets/alpha_short.png" alt="alpha logo" />
-    <button
-      id="hamBtn"
-      class="navbar-toggler hamBtn p-0"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-      style="width: 70px; height: 70px"
+    <!-- desktop nav start -->
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary navImage navText d-xl-flex d-none"
     >
-      <!-- <span class="navbar-toggler-icon"></span> -->
-      <img
-        id="hamImg"
-        src="../assets/Toolbox.png"
-        alt="toolbox image"
-        style="text-align: center"
-      />
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="../index.html">home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../pages/service.html">service</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../pages/equipment.html">equipment</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../pages/products.html">products</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../pages/contact.html">contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-  <!-- mobile nav end -->
+      <div class="container-fluid">
+        <ul class="nav navbar-nav"></ul>
+        <ul class="nav navbar-right">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html"
+              >home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/service.html">service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/equipment.html">equipment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/products.html">products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/contact.html">contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- desktop nav end -->
 
-    <div class="container-fluid hero d-flex" style="height: 200px">
-      <div class="container d-flex">
+    <!-- mobile nav start -->
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary navText d-xl-none d-flex"
+    >
+      <div class="container-fluid">
+        <img class="mNavImg" src="../assets/alpha_short.png" alt="alpha logo" />
+        <button
+          id="hamBtn"
+          class="navbar-toggler hamBtn p-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          style="width: 70px; height: 70px"
+        >
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <img
+            id="hamImg"
+            src="../assets/Toolbox.png"
+            alt="toolbox image"
+            style="text-align: center"
+          />
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/service.html">service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/equipment.html">equipment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/products.html">products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/contact.html">contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- mobile nav end -->
+
+    <div class="container-fluid hero">
+      <div class="container my-lg-5 my-3">
         <div class="row m-auto align-items-center">
           <h4>Sales. Service. Supplies.</h4>
           <h4>Welcome to Alpha Enterprise</h4>
@@ -196,14 +199,21 @@
         <div class="col-12 col-lg-6 text-center my-3">
           <div class="row">
             <div class="col vanAlpha">
-              <img class="vanPic" src="./assets/Van.png" alt="alpha enterprise Van" />
+              <img
+                class="vanPic"
+                src="./assets/Van.png"
+                style="width: 100%"
+                alt="alpha enterprise Van"
+              />
             </div>
           </div>
           <div class="row mb-3"></div>
           <div class="row">
             <div class="col vanAlpha">
-              <img class=""
+              <img
+                class=""
                 src="./assets/alpha 1.png"
+                style="width: 100%"
                 alt="alpha enterprise Warehouse"
               />
             </div>
@@ -213,7 +223,7 @@
     </div>
 
     <footer class="mt-auto">
-      <div class="container-fluid hero p-3">
+      <div class="container-fluid footer p-3">
         <div class="container">
           <div class="row mx-5">
             <div class="col-12 col-lg-3 col-sm-6">

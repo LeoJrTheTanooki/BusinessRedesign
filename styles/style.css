@@ -7,6 +7,11 @@ body {
   background-position: center;
   font-family: "Esteban", serif;
 }
+
+p {
+  color: white;
+}
+
 a {
   color: black;
   margin-bottom: 20px;
@@ -14,17 +19,17 @@ a {
   border: 3px solid transparent;
   text-decoration: none;
 }
-a:link, a:visited {
- 
+a:link,
+a:visited {
   color: black;
 
   text-align: center;
   text-decoration: none;
   padding: 0px 30px;
   border: 3px solid transparent;
-  
 }
-a:hover, a:active {
+a:hover,
+a:active {
   color: black !important;
   background-color: transparent;
   border: 3px solid black;
@@ -33,34 +38,28 @@ a:hover, a:active {
   text-decoration: none;
   border-radius: 5px;
 }
-.hamBtn{
+.hamBtn {
   height: 90px;
   width: 100px;
   margin-top: 10px;
   border: solid black 5px;
 }
-.vanAlpha{
-  contain:content;  
+.vanAlpha {
+  contain: content;
 }
-.vanPic{
+.vanPic {
   width: 100%;
 }
 
-
-
-
-
 .navImage {
   background-image: url(../assets/alphalonglogovector.png);
-  min-height: 100px;
+  min-height: 120px;
   background-position: left;
-  background-size: cover;
-  position: relative;
+  background-size: cover;;
 }
-.mNavImg{
-  width: 75%;
-  
 
+.mNavImg {
+  width: 75%;
 }
 .navText {
   font-size: 20px;
@@ -72,6 +71,13 @@ a:hover, a:active {
 }
 
 .hero {
+  background-color: #252937;
+  color: #e9e9e9;
+  min-height: 200px;
+  max-height: max-content;
+}
+
+.footer{
   background-color: #252937;
   color: #e9e9e9;
 }
@@ -95,19 +101,38 @@ a:hover, a:active {
   background-color: #5d81dc;
 } */
 
-.btn-ae {
+.btn-ae,
+button.carousel-control-prev,
+button.carousel-control-next,
+button.carousel-control-prev:focus,
+button.carousel-control-next:focus {
   background-color: #5d81dc;
   color: black;
+  opacity: 100%;
 }
 
-.btn-ae:hover {
+.btn-ae:hover,
+button.carousel-control-prev:hover,
+button.carousel-control-next:hover {
   background-color: #7f9ce4;
   color: black;
+  opacity: 100%;
 }
 
-.btn-ae:active {
+.btn-ae:active,
+button.carousel-control-prev:active,
+button.carousel-control-next:active {
   background-color: #a1acc8 !important;
   color: black !important;
+  opacity: 100%;
+}
+
+button.carousel-control-prev {
+  left: -89px !important;
+}
+
+button.carousel-control-next {
+  right: -89px !important;
 }
 
 h1,
@@ -140,7 +165,11 @@ gmp-map {
   height: 100%;
 }
 
-a.nav-link:focus{
+a.nav-link:focus {
   background: black;
+  color: #e9e9e9 !important;
+}
+
+li {
   color: #e9e9e9 !important;
 }
