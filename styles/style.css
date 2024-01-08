@@ -106,15 +106,15 @@ button.carousel-control-prev,
 button.carousel-control-next,
 button.carousel-control-prev:focus,
 button.carousel-control-next:focus {
-  background-color: #5d81dc;
+  background-color: #2D3142;
   color: black;
-  opacity: 100%;
+  opacity: 80%;
 }
 
 .btn-ae:hover,
 button.carousel-control-prev:hover,
 button.carousel-control-next:hover {
-  background-color: #7f9ce4;
+  background-color: #2D3142;
   color: black;
   opacity: 100%;
 }
